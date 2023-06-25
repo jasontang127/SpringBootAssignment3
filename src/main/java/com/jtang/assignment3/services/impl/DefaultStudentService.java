@@ -38,7 +38,7 @@ public class DefaultStudentService implements StudentService {
 	}
 	
 	@Override
-	public void deleteStudent(@PathVariable("id") int id) {
+	public void deleteStudentById(@PathVariable("id") int id) {
 		repo.deleteById(id);
 	}
 }
