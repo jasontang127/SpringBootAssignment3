@@ -41,7 +41,7 @@ public class StudentRestController {
 	
 	@RequestMapping(value = "/students/{id}", method = RequestMethod.DELETE)
 	public void deleteStudent(@PathVariable("id") int id) {
-		service.deleteStudent(id);
+		service.deleteStudentById(id);
 	}
 	
 }
